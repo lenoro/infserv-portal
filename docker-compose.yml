@@ -1,0 +1,13 @@
+services:
+  infserv-portal:
+    image: ghcr.io/lenoro/infserv-portal:latest
+    container_name: infserv-portal
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    networks:
+      - infserv-net
+
+networks:
+  infserv-net:
+    external: true
