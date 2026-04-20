@@ -29,6 +29,7 @@ const APPS = [
     tags: ['Cantine', 'Stock', 'FEFO'],
     color: '#7c3aed',
     url: 'https://cantine.infserv.ca',
+    apiUrl: 'https://cantine.infserv.ca/api',
     status: 'live',
   },
   {

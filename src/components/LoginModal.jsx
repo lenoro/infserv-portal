@@ -14,7 +14,8 @@ export default function LoginModal({ app, onClose }) {
 
     try {
       // Tentative d'auth sur l'app cible
-      const res = await fetch(`${app.url}/auth/login`, {
+      const endpoint = app.apiUrl || app.url
+      const res = await fetch(`${endpoint}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
