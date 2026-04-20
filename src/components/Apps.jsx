@@ -8,7 +8,8 @@ const APPS = [
     desc: 'Gestion complète du stock et du magasin — réceptions, affectations, inventaire, registres officiels.',
     tags: ['Stock', 'Magasin', 'Registres'],
     color: '#3b4fd8',
-    url: 'http://infserv.ca:8081',
+    url: 'https://gestionmagasin.infserv.ca',
+    apiUrl: 'https://gestionmagasin.infserv.ca/api',
     status: 'live',
   },
   {
@@ -18,7 +19,8 @@ const APPS = [
     desc: 'Calcul automatique des fiches de paie, gestion des agents, édition des bulletins officiels.',
     tags: ['Paie', 'RH', 'Bulletins'],
     color: '#059669',
-    url: 'http://infserv.ca:8082',
+    url: 'https://calpaie.infserv.ca',
+    apiUrl: 'https://calpaie.infserv.ca/api',
     status: 'live',
   },
   {
