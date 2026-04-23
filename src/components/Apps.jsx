@@ -26,7 +26,7 @@ const APPS = [
   {
     key: 'cantine',
     icon: '🍽️',
-    name: 'Cantine',
+    name: 'GestCantine',
     desc: 'Gestion des stocks de cantine scolaire — réceptions, sorties cuisine, alertes péremption.',
     tags: ['Cantine', 'Stock', 'FEFO'],
     color: '#7c3aed',
@@ -123,7 +123,7 @@ export default function Apps({ onLaunch }) {
               </div>
 
               {/* Bouton */}
-              <button onClick={() => onLaunch(app)} style={{
+              <button onClick={() => window.open(app.url, '_blank')} style={{
                 marginTop: 'auto',
                 background: hovered === app.key
                   ? `linear-gradient(135deg, ${app.color}, ${app.color}cc)`
